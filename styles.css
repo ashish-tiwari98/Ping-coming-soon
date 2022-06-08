@@ -8,6 +8,10 @@ body{
     font-family: 'Libre Franklin', sans-serif;
 }
 
+.container{
+    width:42rem;
+}
+
 h2>span{
     color:black;
 }
@@ -23,11 +27,6 @@ h2{
     text-align: center;
 }
 
-footer{
-    position: relative;
-    top:25x;
-}
-
 p{
     position: relative;
     top:-10px;
@@ -40,13 +39,42 @@ p{
     padding-left:20px;
 }
 .btn{
-    float:right;
     border-radius: 20px;
-    padding-left:45px;
-    padding-right:45px;
+    width:100%;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
 }
-
 img{
     position: relative;
     top:10px;
+}
+
+.social{
+    position: relative;
+    top:15px;
+    width: 150px;
+    margin: 0 auto;
+}
+.circle{
+    border-radius: 100%;
+    border:1px solid rgb(245, 240, 240);
+    width:35px;
+    margin:7px;
+    padding:3px 7px;
+}
+
+i{
+    color: hsl(223, 87%, 63%);
+}
+
+.circle:hover>i{
+    color:white;
+}
+.circle:hover{
+    background-color:hsl(223, 87%, 63%); 
+}
+footer{
+    position: relative;
+    top:30px;
+    font-size: 12px;
 }

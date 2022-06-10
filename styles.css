@@ -100,7 +100,7 @@ footer{
     }
     .social,footer{
         position: relative;
-        top:20%;
+        top:10% !important;
     }
 
     .px-5{

@@ -16,25 +16,30 @@
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   <title>Ping coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
-<body>
+<body >
   <main class="container vertical">
     <div class="row">
       <h3><strong>PING.</strong></h3>
       <h2 class="my-2 px-5">We are launching <span><strong>soon!</strong></span></h2>
       <p>Subscribe and get notified</p>
     </div>
-    <div class="row d-flex justify-content-around">
-      <div class="col-md-6" id="col-form">
-          <input class="form-control py-2" type="email" value="Your email address">
+    <form method="get" class="row d-flex justify-content-around" action="#">
+      <div class="col-md-6" id="col-form" >
+          <input class="form-control py-2" type="email" placeholder="Your email address" id="email-text" name="email">
+          <div id="result"></div>
       </div>
       <div class="col-md-3" id="col-button">
-        <button class="btn py-2 px-3" >Notify Me</button>
+        <button type="submit" class="btn py-2 px-3" id="validate">Notify Me</button>
       </div>
-    </div>
+    </form>
     <div class="row px-5 py-2">
         <img src="images/illustration-dashboard.png">
     </div>
@@ -48,6 +53,6 @@
       </footer>
     
   </main>
+  <script src="email-validation.js"></script>
 </body>
-
 </html>

@@ -48,6 +48,10 @@ p{
     background-color: hsl(223, 87%, 63%);
     color: white;
 }
+
+#result{
+    margin-left:0 !important;
+}
 img{
     position: relative;
     top:10px;
@@ -90,6 +94,7 @@ footer{
         margin-bottom: 15px;
     }
     .container{
+        margin:70px auto;
         width:90%;
         height:100%;
     }
